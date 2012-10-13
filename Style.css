@@ -1,0 +1,406 @@
+/*
+File Name: style.css
+Author: Tim Brazier
+Version: 1.0.0
+Author URL: http://www.timbrazier.co.uk
+Description:   Stylesheet for JE Bennett Law
+*/
+
+body, div, h1, h2, h3, h4, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: #fff url(graphics/body-bg.png) repeat;
+	text-align: center;
+}
+
+#container{
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#header{
+	height: 140px;
+	width: 960px;
+	border-bottom: 1px solid #e8e8e8;
+}
+	
+#header h2{
+	font-size: 24px;
+	font-weight: lighter;
+	color: #7d7d7d;
+	float: right;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+
+#header img{
+	margin-top: 20px;
+}
+
+
+#header h1 a{
+	background: url(graphics/logo.png) no-repeat;
+	float: left;
+	text-indent: -9999px;
+	margin-top: 30px;
+    height: 108px;
+    width: 350px;
+}
+
+/* Navigation Style */
+
+#header ul#nav{
+	float: right;
+	list-style: none;
+	margin: 75px -30px 0 0;
+}
+
+#header ul#nav li{
+	float: left;
+	padding: 0 0 0 20px;
+	margin: 0 37px 0 0;
+}
+
+#header ul#nav li:first-child{background: none;}
+
+#header ul#nav li a{
+	font-size: 16px;
+	color: #7d7d7d;
+	text-decoration: none;
+}
+
+#header ul#nav li a:hover, #header ul#nav li a.hover{
+	color: #7d7d7d;
+	border-bottom: 1px dashed #C0C642;
+}
+
+#get-in-touch{
+	font-weight: normal;
+	float: right;
+	width: 260px;
+	margin-top: 40px;
+	color: #fff;
+	text-align: right;
+	line-height: 30px;
+}
+
+#get-in-touch h3{
+	font-weight: normal;
+	font-size: 1.6em;
+}
+
+#get-in-touch h4{
+	color: #2283a4;
+	font-weight: normal;
+	font-size: 1.6em;
+}
+
+#get-in-touch a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#get-in-touch a:hover{
+	text-decoration: underline;
+}
+	
+#introduction-panel{
+	height: 250px;
+}
+
+#banner{
+	height: 220px;
+	width: 960px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#intro-quote{
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	position: absolute;
+	margin-top: 26px;
+	height: 160px;
+	width: 490px;
+}
+
+#intro-quote h2{
+	font-weight: normal;
+	color: #2283a4;
+	font-size: 1.6em;
+	line-height: 20px;
+	float: left;
+}
+
+#intro-quote h3{
+	font-weight: normal;
+	color: #7d7d7d;
+	font-size: 1.35em;
+	float: left;
+	margin-left: 10px;
+	width: 420px;
+}
+
+#intro-quote h4{
+	font-weight: normal;
+	color: #7d7d7d;
+	font-size: 1em;
+	clear: both;
+	line-height: 20px;
+	float: right;
+}
+
+#intro-quote p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	line-height: 20px;
+	color: #7d7d7d;
+	font-size: 0.9em;
+	float: right;
+	clear: both;
+}
+
+#intro-open-quote img{
+	float: left;
+}
+
+#intro-close-quote img{
+	float: bottom;
+}
+
+/** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:175px;
+	width: 438px;
+	float: right;
+	margin-top: 20px;
+}
+
+#slideshow img {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow img.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow img.last-active {
+    z-index:9;
+}
+
+/*Start of Main Body*/
+
+#main-body{
+	width: 960px;
+	height: 350px;
+	padding: 30px 0px;
+	border-bottom: 1px solid #e8e8e8;
+	position: relative;
+}
+
+#main-body h3{
+	font-weight: lighter;
+	color: #7d7d7d;
+}
+
+#main-body p{
+	font-family: Arial;
+	font-weight: lighter;
+	font-size: 13px;
+	line-height: 20px;
+	color: #7d7d7d;
+	margin-top: 10px;
+}
+
+#main-body a{
+	font-family: 'Open Sans', sans-serif;
+	color: #aec329;
+	border-bottom: 1px dashed #aec329;
+	padding: 5px;
+	text-decoration: none;
+	position:absolute;
+	bottom:15px;
+	height: 25px;
+	width: 110px;
+}
+
+#main-body a:hover{
+	background: #aec329;
+	color: #fff;
+	border-bottom: 1px dashed #fff;
+}
+
+#about-me{
+	width: 250px;
+	float: left;
+	margin-right: 105px;
+}
+
+#my-work{
+	width: 250px;
+	float: left;
+}
+
+#awareness{
+	width: 250px;
+	float: right;
+}
+
+#footer{
+	width: 960px;
+	height:  300px;
+	padding: 30px 0px;
+	clear: both;
+	}
+	
+#footer p{
+	font-family: Arial;
+	font-weight: lighter;
+	font-size: 13px;
+	line-height: 20px;
+	color: #7d7d7d;
+	margin-top: 10px;
+	}
+
+#footer-1{
+	width: 250px;
+	float: left;
+	margin-right: 105px;
+}
+
+#footer-2{
+	width: 250px;
+	float: left;
+	padding-top: 30px;
+	}
+	
+#footer-3{
+	width: 250px;
+	float: right;
+	padding-top: 30px;
+	}
+
+#footer h3{
+	font-weight: lighter;
+	color: #7d7d7d;
+}
+
+#footer-1 img{
+	padding-top: 10px;
+	}
+
+#footer-2 img{
+	float: left;
+	padding: 10px 10px 0 0;
+}
+
+#footer-3 img{
+	float: left;
+	padding: 10px 10px 0 0;
+}
+
+#footnote{
+	margin: 5px;
+	font-family: Arial;
+	font-size: 8pt;
+	clear: both;
+	font-weight: lighter;
+	line-height: 20px;
+	color: #7d7d7d;
+	text-align: center;
+}
+
+/** About Me Page Styles **/
+
+#about-me-main-body{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#about-me-main-body h2{
+	font-size: 1.4em;
+	color: #7d7d7d;
+}
+
+#about-me-main-body p{
+	font-size: 13px;
+	color: #7d7d7d;
+	line-height: 150%;
+}
+
+#about-me-image{
+	float: left;
+	padding-top: 20px;
+}
+
+#about-me-main-body-copy{
+	padding: 30px 0 90px 310px;
+}
+
+/** Our Work Page Styles **/
+
+#our-work-main-body{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#our-work-main-body h2{
+	font-size: 1.4em;
+	color: #7d7d7d;
+}
+
+#our-work-main-body p{
+	font-size: 13px;
+	color: #7d7d7d;
+	line-height: 150%;
+}
+
+#our-work-image{
+	float: left;
+	padding-top: 20px;
+}
+
+#our-work-main-body-copy{
+	padding: 30px 0 90px 310px;
+}
+
+/** Awareness Page Styles **/
+
+#awareness-main-body{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#awareness-main-body h2{
+	font-size: 1.4em;
+	color: #7d7d7d;
+}
+
+#awareness-main-body p{
+	font-size: 13px;
+	color: #7d7d7d;
+	line-height: 150%;
+}
+
+#awareness-image{
+	float: left;
+	padding-top: 20px;
+}
+
+#awareness-main-body-copy{
+	padding: 30px 0 90px 310px;
+}
